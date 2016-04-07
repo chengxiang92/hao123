@@ -80,11 +80,8 @@
             margin-left: 0;
             line-height: 38px;
         }
-        #nav ul li a span{
+        span{
             font-family: 'Microsoft YaHei';
-        }
-        .absolute {
-            position: absolute;
         }
         #nav ul li a{
             position: relative;
@@ -112,6 +109,10 @@
             width: 280px;
             border: 1px solid #f0f0f0
         }
+        .lcontent{
+            height: 330px;
+            overflow: auto;
+        }
         .lcontent .littleNav{
             background-color: #f7f7f7;
         }
@@ -135,18 +136,46 @@
         .littleNav ul li i{
             border: 1px solid #eaeaea
         }
+        .lcontent .ad{
+            overflow: hidden;
+        }
         .lcontent .ad ul{
             list-style: none;
             padding: 0px;
             margin:0px;
         }
+        .lcontent .ad .prev{
+            left:240px;
+            top:35px;
+        }
+        .lcontent .ad .next{
+            left:20px;
+            top:35px;
+        }
         .lcontent .ad .next i{
+          display: block;
+          width: 20px;
+          height: 42px;
+          background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Hz/mn/Ev/BX/8z/2/index_menus_widthlg.png') 0px -422px no-repeat;
+        }
+        .lcontent .ad .prev i{
             display: block;
             width: 20px;
             height: 42px;
             background-image: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Hz/mn/Ev/BX/8z/2/index_menus_widthlg.png');
             background-repeat: no-repeat;
             background-position:-31px -422px;
+        }
+        .lcontent .list ul{
+            list-style:none;
+            padding-left: 20px;
+        }
+        .lcontent .list ul li{
+            height: 28px;
+            line-height:18px;
+        }
+        .lcontent ul li a span{
+            font-size:14px;
         }
          /*左侧模块 end*/
         #content .right{
@@ -264,12 +293,23 @@
                             <li><a><span>体育</span></a></li>
                         </ul>
                     </div>
-                    <div class="ad">
+                    <div class="ad relative">
                         <ul>
                             <li><a><img src="images/ad1.jpg"></a></li>
                         </ul>
-                        <a class="next"><i></i></a>
-                        <a class="prev"><i></i></a>
+                        <a class="next absolute"><i></i></a>
+                        <a class="prev absolute"><i></i></a>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                            <li><a><span>增值税央地分成比例将变 大致五五开 </span></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
