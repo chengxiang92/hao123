@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hao123_上网从这里开始</title>
+    <style>
+        a{
+            cursor:pointer;
+        }
+        .header{
+            height:60px;
+        }
+        .logo{
+            background: url("images/richanglogo168_24.png");
+        }
+        .search{
+            height: 135px;
+            position: relative;
+        }
+        .search .bg{
+            background: url("images/baidu.png");
+            width:825px;
+            height: 63px;
+            left:50px;
+            top:130px;
+        }
+        .search .logo{
+            background: url(images/index_widthlg.png) -10px -212px no-repeat;
+            width: 120px;
+            height: 40px;
+            position: absolute;
+            left:200px;
+            top:60px;
+            margin-right:20px;
+        }
+        #inputbg{
+            background: url(images/index_widthlg.png) -160px -200px no-repeat;
+            width: 660px;
+            height: 60px;
+            position: absolute;
+            left:340px;
+            top:60px;
+        }
+        #inputbg input{
+            margin: 11px 0px 10px 11px;
+            height: 35px;
+            width: 525px;
+            border:0px;
+            outline:none;
+        }
+        #inputbg #searchBtn{
+            float:right;
+            width: 120px;
+            height: 45px;
+            margin-top: 8px;
+            cursor:pointer;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .absolute {
+            position: absolute;
+        }
+        #nav ul{
+            padding: 0;
+            list-style: none;
+            width: 100%;
+            overflow: hidden;
+            border-top: 2px solid #099e6a;
+            border-bottom: 1px solid #eaeaea;
+            background: #fcfcfc;
+        }
+        #nav ul li{
+            float: left;
+            width: 110px;
+            height: 40px;
+            margin-left: 0;
+            line-height: 38px;
+        }
+        #nav ul li a span{
+            font-family: 'Microsoft YaHei';
+        }
+        .absolute {
+            position: absolute;
+        }
+        #nav ul li a{
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+        .relative{
+            position:relative;
+        }
+        .split{
+            display: block;
+            width: 1px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/dU/1s/Aa/af/gO/3/menus_split.png) center left no-repeat;
+        }
+        #content{
+            width: 100%;
+            overflow: hidden;
+        }
+        #content .left{
+            height: 660px;
+            width: 280px;
+            border: 1px solid #f0f0f0
+        }
+        .lcontent .littleNav{
+            background-color: #f7f7f7;
+        }
+        .lcontent .littleNav ul{
+            height: 34px;
+            list-style: none;padding: 0px;clear: both;overflow: hidden;
+            margin:0px;
+        }
+        .lcontent .littleNav ul li{
+            float:left;
+            width: 55px;
+            position: relative;
+            line-height:32px;
+        }
+        .littleNav ul li a{
+            display: block;
+            width: 53px;
+            text-align: center;
+            float: left;
+        }
+        .littleNav ul li i{
+            border: 1px solid #eaeaea
+        }
+        .lcontent .ad ul{
+            list-style: none;
+            padding: 0px;
+            margin:0px;
+        }
+        .lcontent .ad .next i{
+            display: block;
+            width: 20px;
+            height: 42px;
+            background-image: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Hz/mn/Ev/BX/8z/2/index_menus_widthlg.png');
+            background-repeat: no-repeat;
+            background-position:-31px -422px;
+        }
+         /*左侧模块 end*/
+        #content .right{
+            height: 330px;
+            width: 900px;
+            overflow:hidden;
+            border: 1px solid #adb;
+        }
+        #content .right .link{
+            list-style: none;
+            width: 875px;
+            height:100px;
+            padding: 10px 0px 0px 25px;
+            clear:both;
+        }
+        #content .right .link li{
+            float: left;
+            width: 140px;
+            padding:5px 0px 5px 5px;
+        }
+        #content .right .link li a {
+              margin: auto;
+              background:url(https://gss2.bdstatic.com/5bVYsj_p_tVS5dKfpU_Y_D3/urlicon/1419388771.png) no-repeat
+          }
+        #content .right .link li a span{
+            margin-left:20px;
+        }
+        #content .right .link2{
+            width: 875px;
+            height:150px;
+            padding: 10px 0px 0px 25px;
+            clear:both;
+        }
+        #content .right .link2 ul{
+            list-style: none;
+            width: 875px;
+            height:100px;
+            padding:0px;
+            clear:both;
+        }
+        #content .right .link2 ul li{
+            float: left;
+            width: 140px;
+            padding:5px 0px 5px 5px;
+        }
+        #content .link{
+            height: 20px;
+            width: 900px;
+            float: right;
+        }
+        #content .link ul{
+            list-style: none;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+        #content .link ul li{
+            float: left;
+            width: 110px;
+        }
+        #content .link ul li a span:hover{
+            text-decoration:underline;
+        }
+        #content .link ul li a span{
+            color: #3b5998;
+            float: left;
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1200px;margin: 0px auto">
+        <div class="header">
+            <a class="absolute"><img src="images/richanglogo168_24.png"></a>
+            <a class="absolute" style="left: 160px; top:20px;"><span>设为首页</span></a>
+            <a class="absolute" style="left: 240px; top:20px;">北京</a>
+            <a class="absolute" style="left: 320px; top:20px;">天气</a>
+            <a class="absolute" style="left: 400px; top:20px;">日期</a>
+            <a class="absolute" style="right: 200px; top:20px;">登录</a>
+            <a class="absolute" style="right: 150px; top:20px;">邮箱</a>
+            <a class="absolute" style="right: 100px; top:20px;">换肤</a>
+        </div>
+        
+        <div class="search">
+            <div class="left logo"></div>
+            <div id="inputbg">
+                <input type="text">
+                <div id="searchBtn"></div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="nav">
+                <ul>
+                    <li style="width: 80px;"><a><span>首页</span><span class="split"></span></a></li>
+                    <li><a><span>电视剧</span><span class="split"></span></a></li>
+                    <li><a><span>最新电影</span><span class="split"></span></a></li>
+                    <li><a><span>新闻头条</span><span class="split"></span></a></li>
+                    <li><a><span>八卦娱乐</span><span class="split"></span></a></li>
+                    <li><a><span>军事热点</span><span class="split"></span></a></li>
+                    <li><a><span>热门游戏</span><span class="split"></span></a></li>
+                    <li><a><span>小游戏</span><span class="split"></span></a></li>
+                    <li><a><span>今日特价</span><span class="split"></span></a></li>
+                    <li><a><span>特价旅游</span><span class="split"></span></a></li>
+                    <li><a><span>生活服务</span></a></li>
+                </ul>
+            </div>
+            <div class="left">
+                <div class="lcontent">
+                    <div class="littleNav">
+                        <ul >
+                            <li><a><span>头条</span></a><i></i></li>
+                            <li><a><span>社会</span></a><i></i></li>
+                            <li><a><span>娱乐</span></a><i></i></li>
+                            <li><a><span>军事</span></a><i></i></li>
+                            <li><a><span>体育</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="ad">
+                        <ul>
+                            <li><a><img src="images/ad1.jpg"></a></li>
+                        </ul>
+                        <a class="next"><i></i></a>
+                        <a class="prev"><i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <ul class="link">
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                    <li><a><span>hao123-好123</span></a></li>
+                </ul>
+                <div style="width: 850px;margin:0px 25px;border-top: 1px solid #f0f0f0; clear: both;"></div>
+                <div class="link2">
+                    <ul>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                        <li><a><span>hao123-好123</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a><span>聚划算</span></a></li>
+                    <li><a><span>天猫</span></a></li>
+                    <li><a><span>淘宝</span></a></li>
+                    <li><a><span>京东</span></a></li>
+                </ul>
+            </div>
+            <div class="right">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
